@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+<link rel="stylesheet" href="css/style_regis.css" />
+<link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input:checkbox, input:radio, input:file, select").uniform();
+      });
+    </script>
+</head>
+<body>
+<article>
+<h1>Register Here</h1>
+<form action="cgi-bin/register.cgi" target="_top" method="post" enctype="multipart/form-data">
+	<ul>
+        <li>
+        	<label for="email">Your Email:</label>
+            <input type="email" size="40" id="email" name="email" />
+        </li>
+	<li>
+        	<label for="name">Name:</label>
+            <input type="text" size="40" id="name" name="fname"/>
+        </li>
+        <li>
+        	<label for="pass">Password:</label>
+            <input type="password" size="40" id="name" name="password"/>
+        </li>
+		<li>
+        	<label for="repass">Re-type Password:</label>
+            <input type="password" size="40" id="name" name="repassword" />
+        </li>
+        
+
+        <li>        	<label for="gender">Gender:</label>
+            <label><input type="radio" name="radio" value="male" />Male</label>
+            <label><input type="radio" name="radio" value="female" />Female</label>
+        </li>
+        <li>
+		<label for="interest">Interested in</label>
+			<label><input type="checkbox" value="Computers" name="check" />Computers</label>
+			<label><input type="checkbox" value="Smartphones" name="check" />Smartphones</label>
+		<label for="interest">what ?</label>
+			<label><input type="checkbox" value="Rasberry Pie" name="check" />Rasberry Pie</label>
+			<label><input type="checkbox" value="Gadgets" name="check" />Gadgets</label>
+			</li>
+			
+			
+		<li>
+            <label for="car">How do you know about this? </label>
+            <select id="car" name="publicity">
+                <option value="Social Media">Social Media</option>
+                <option value="Friend">Friend</option>
+                <option value="ACM">ACM Club</option>
+                <option value="Other">Other&hellip;</option>
+            </select>
+        </li>
+        <li>
+            <label>Upload a file:</label>
+            <input type="file" accept="image/gif, image/jpeg" name="photo"/>
+        </li>
+        <li>
+        	<label for="message">Message:</label>
+            <textarea cols="50" rows="5" id="message"></textarea>
+		</li>
+	</ul>
+    <p>
+        <button type="submit" class="action">Call to action</button>
+        <button type="reset" class="right">Reset</button>
+    </p>
+</form>
+</article>

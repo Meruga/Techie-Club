@@ -1,0 +1,30 @@
+body {
+background-color: #212121;
+   overflow: hidden;
+}
+div#header {
+background-color: #3e3436;
+height: 60px;
+}
+
+div#main iframe{
+background-color: #212121;
+
+    position: absolute;
+    bottom: 0;
+	top:0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+div#sidebar {
+background-color: #0FF;
+width: 80px;
+position: absolute;
+top: 110px;
+min-height: 300px;
+}
+div#footer {
+border: 2px solid red;
+}
